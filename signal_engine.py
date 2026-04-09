@@ -37,13 +37,29 @@ LOG_FILE = os.environ.get("LOG_FILE", "signal_log.json")
 STATE_FILE = "signal_state.json"
 
 
-# ─── BINANCE API ──────────────────────────────────────────────────────────────
+# ─── KUCOIN API (works from US/GitHub Actions, unlike Binance) ─────────────────
 def fetch_ohlcv(symbol: str, interval: str = "1h", limit: int = 250) -> list:
-    url = f"https://api.binance.com/api/v3/klines?symbol={symbol}USDT&interval={interval}&limit={limit}"
+    """Fetch OHLCV from KuCoin. Returns [[ts, o, h, l, c, v], ...] (Binance-normalized)."""
+    tf_map = {"1h": "1hour", "4h": "4hour", "1d": "1day"}
+    kucoin_tf = tf_map.get(interval, "1hour")
+    url = f"https://api.kucoin.com/api/v1/market/candles?type={kucoin_tf}&symbol={symbol}-USDT&limit={limit}"
     req = urllib.request.Request(url, headers={"User-Agent": "HALEIO/2.0"})
     with urllib.request.urlopen(req, timeout=15) as resp:
-        data = json.loads(resp.read())
-    return [[d[0], float(d[1]), float(d[2]), float(d[3]), float(d[4]), float(d[5])] for d in data]
+        raw = json.loads(resp.read())
+    data = raw.get("data", [])
+    # KuCoin returns [ts, open, close, high, low, volume, turnover] — newest first
+    # Normalize to [ts_ms, open, high, low, close, volume] — oldest first
+    result = []
+    for d in reversed(data):
+        result.append([
+            int(d[0]) * 1000,  # seconds -> ms
+            float(d[1]),       # open
+            float(d[3]),       # high
+            float(d[4]),       # low
+            float(d[2]),       # close (KuCoin puts close before high/low!)
+            float(d[5]),       # volume
+        ])
+    return result
 
 
 # ─── INDICATORS (pure math) ──────────────────────────────────────────────────
