@@ -206,16 +206,20 @@ def main():
             highs = [c[2] for c in candles]
             lows = [c[3] for c in candles]
 
-            ema_f = ema(closes, EMA_FAST)
-            ema_s = ema(closes, EMA_SLOW)
-            rsi_v = rsi(closes, RSI_PERIOD)
-            atr_v = atr(highs, lows, closes, ATR_PERIOD)
+            # Use only CLOSED candles (drop last — it's still forming)
+            # Prevents false signals from mid-candle RSI dips
+            cc, hc, lc = closes[:-1], highs[:-1], lows[:-1]
 
-            statuses.append(get_status(closes, ema_f, ema_s, rsi_v, atr_v, base))
+            ema_f = ema(cc, EMA_FAST)
+            ema_s = ema(cc, EMA_SLOW)
+            rsi_v = rsi(cc, RSI_PERIOD)
+            atr_v = atr(hc, lc, cc, ATR_PERIOD)
 
-            sig = detect(closes, highs, lows, ema_f, ema_s, rsi_v, atr_v, base)
+            statuses.append(get_status(cc, ema_f, ema_s, rsi_v, atr_v, base))
+
+            sig = detect(cc, hc, lc, ema_f, ema_s, rsi_v, atr_v, base)
             if sig:
-                bar_id = str(candles[-1][0])
+                bar_id = str(candles[-2][0])  # use closed candle's timestamp
                 key = f"{base}_{sig['direction']}"
                 if state.get(key) != bar_id:
                     signals.append(sig)
