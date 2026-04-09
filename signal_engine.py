@@ -238,15 +238,23 @@ def main():
             entry_label = "Buy" if is_long else "Sell"
             sl_label = "Stop Loss"
 
-            # Build clean signal message
+            # Compute TP levels in plain dollars
+            atr_abs = s["price"] * s["atr_pct"] / 100  # dollar ATR
+            be_trigger = round(s["price"] + (1.5 * atr_abs if is_long else -1.5 * atr_abs), 6)
+            trail_trigger = round(s["price"] + (3.0 * atr_abs if is_long else -3.0 * atr_abs), 6)
+
+            # Build clean signal message — all in dollars, no jargon
             msg = (
                 f"{emoji} <b>{tag}</b> · {s['pair']}/USDT\n"
                 f"\n"
-                f"  {entry_label}  ${s['price']}\n"
-                f"  {sl_label}  ${s['sl']}  ({s['sl_pct']}%)\n"
+                f"  Entry       ${s['price']}\n"
+                f"  Stop Loss   ${s['sl']}  (risk {s['sl_pct']}%)\n"
                 f"\n"
-                f"  RSI  {s['rsi']}   ATR  {s['atr_pct']}%\n"
-                f"  Hold  {s['hold']}\n"
+                f"  ── move stop when price hits ──\n"
+                f"  Breakeven   ${be_trigger}\n"
+                f"  Trail       ${trail_trigger}\n"
+                f"\n"
+                f"  Hold max {s['hold']}  ·  RSI {s['rsi']}\n"
                 f"\n"
                 f"  {ts}"
             )
