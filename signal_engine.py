@@ -232,38 +232,56 @@ def main():
 
     if signals:
         for s in signals:
-            tag = "LONG" if s["direction"] == "LONG" else "SHORT"
-            emoji = "🟢" if tag == "LONG" else "🔴"
+            is_long = s["direction"] == "LONG"
+            emoji = "🟢" if is_long else "🔴"
+            tag = "LONG" if is_long else "SHORT"
+            entry_label = "Buy" if is_long else "Sell"
+            sl_label = "Stop Loss"
+
+            # Build clean signal message
             msg = (
-                f"{emoji} <b>{tag} {s['pair']}/USDT</b>\n"
-                f"━━━━━━━━━━━━━━━━\n"
-                f"💰 Entry: <b>${s['price']}</b>\n"
-                f"📊 RSI: {s['rsi']} | ATR: {s['atr_pct']}%\n"
-                f"🛑 Stop: ${s['sl']} ({s['sl_pct']}% away)\n"
-                f"⏱ Hold: {s['hold']}\n"
-                f"━━━━━━━━━━━━━━━━\n"
-                f"⏰ {ts}"
+                f"{emoji} <b>{tag}</b> · {s['pair']}/USDT\n"
+                f"\n"
+                f"  {entry_label}  ${s['price']}\n"
+                f"  {sl_label}  ${s['sl']}  ({s['sl_pct']}%)\n"
+                f"\n"
+                f"  RSI  {s['rsi']}   ATR  {s['atr_pct']}%\n"
+                f"  Hold  {s['hold']}\n"
+                f"\n"
+                f"  {ts}"
             )
             send_telegram(msg)
             print(f"SIGNAL: {tag} {s['pair']} @ ${s['price']}")
     else:
-        # Status dashboard
-        lines = [f"📡 <b>HALEIO Scanner</b> — {ts}\n"]
+        # Status dashboard — one line per coin
+        lines = [f"⚪ <b>HALEIO</b> · {ts}\n"]
         for st in statuses:
             if "error" in st:
-                lines.append(f"⚠️ {st['pair']}: error")
+                lines.append(f"  ⚠️ {st['pair']}  error")
             elif "status" in st:
-                lines.append(f"⏳ {st['pair']}: {st['status']}")
+                lines.append(f"  ⚪ {st['pair']}  {st['status']}")
             else:
-                trend_icon = "🟢" if st["trend"] == "UP" else "🔴" if st["trend"] == "DOWN" else "⚪"
-                # Highlight if close to trigger
-                near = ""
-                if st["trend"] == "UP" and st["rsi"] < 50:
-                    near = " ⚡"
+                # Emoji by trend
+                if st["trend"] == "UP":
+                    emoji = "🟢"
+                elif st["trend"] == "DOWN":
+                    emoji = "🔴"
+                else:
+                    emoji = "⚪"
+
+                # Highlight if near trigger zone
+                rsi_str = f"RSI {st['rsi']}"
+                if st["trend"] == "UP" and st["rsi"] < 45:
+                    rsi_str = f"<b>RSI {st['rsi']}</b> ⚡"
                 elif st["trend"] == "DOWN" and st["rsi"] > 55:
-                    near = " ⚡"
-                lines.append(f"{trend_icon} {st['pair']}: ${st['price']} | RSI {st['rsi']}{near}")
-        lines.append(f"\n⏳ Waiting: RSI&lt;40 (longs) | RSI&gt;60 (shorts)")
+                    rsi_str = f"<b>RSI {st['rsi']}</b> ⚡"
+
+                lines.append(f"  {emoji} {st['pair']}  ${st['price']}  {rsi_str}")
+
+        # Add trigger reminder
+        lines.append("")
+        lines.append("  waiting: RSI &lt;40 ↑ or RSI &gt;60 ↓")
+
         send_telegram("\n".join(lines))
 
     # Output for GitHub Actions logs
