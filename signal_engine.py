@@ -13,7 +13,7 @@ import urllib.parse
 from datetime import datetime, timezone, timedelta
 
 # ─── CONFIG ───────────────────────────────────────────────────────────────────
-PAIRS = ["TAO", "NEAR", "FET", "ONDO", "RNDR", "SUI", "PENDLE"]
+PAIRS = ["TAO", "NEAR", "FET", "ONDO", "RNDR", "SUI", "PENDLE", "TIA", "INJ", "WIF", "STRK"]
 TIMEFRAME = "1h"
 LIMIT = 250
 
