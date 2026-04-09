@@ -1,1 +1,14 @@
-[]
+[
+  {
+    "pair": "STRK",
+    "direction": "SHORT",
+    "price": 0.03369,
+    "rsi": 61.3,
+    "atr_pct": 0.9,
+    "sl": 0.034449,
+    "sl_pct": 2.25,
+    "hold": "48h",
+    "logged_at": "2026-04-09T18:53:59.236943+00:00",
+    "status": "OPEN"
+  }
+]
