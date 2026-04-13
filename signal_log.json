@@ -130,5 +130,29 @@
     "hold": "48h",
     "logged_at": "2026-04-13T20:45:02.236825+00:00",
     "status": "OPEN"
+  },
+  {
+    "pair": "TIA",
+    "direction": "SHORT",
+    "price": 0.3034,
+    "rsi": 61.9,
+    "atr_pct": 1.15,
+    "sl": 0.312088,
+    "sl_pct": 2.86,
+    "hold": "48h",
+    "logged_at": "2026-04-13T22:37:07.937560+00:00",
+    "status": "OPEN"
+  },
+  {
+    "pair": "INJ",
+    "direction": "SHORT",
+    "price": 2.995,
+    "rsi": 62.6,
+    "atr_pct": 0.97,
+    "sl": 3.067745,
+    "sl_pct": 2.43,
+    "hold": "48h",
+    "logged_at": "2026-04-13T22:37:08.144418+00:00",
+    "status": "OPEN"
   }
 ]
