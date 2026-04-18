@@ -298,5 +298,41 @@
     "hold": "48h",
     "logged_at": "2026-04-18T04:26:59.736211+00:00",
     "status": "OPEN"
+  },
+  {
+    "pair": "ONDO",
+    "direction": "LONG",
+    "price": 0.26568,
+    "rsi": 39.7,
+    "atr_pct": 1.1,
+    "sl": 0.258397,
+    "sl_pct": 2.74,
+    "hold": "48h",
+    "logged_at": "2026-04-18T10:34:01.756369+00:00",
+    "status": "OPEN"
+  },
+  {
+    "pair": "INJ",
+    "direction": "LONG",
+    "price": 3.315,
+    "rsi": 39.6,
+    "atr_pct": 0.99,
+    "sl": 3.233083,
+    "sl_pct": 2.47,
+    "hold": "48h",
+    "logged_at": "2026-04-18T10:34:02.779881+00:00",
+    "status": "OPEN"
+  },
+  {
+    "pair": "WIF",
+    "direction": "LONG",
+    "price": 0.2119,
+    "rsi": 39.0,
+    "atr_pct": 1.24,
+    "sl": 0.205348,
+    "sl_pct": 3.09,
+    "hold": "48h",
+    "logged_at": "2026-04-18T10:34:02.968142+00:00",
+    "status": "OPEN"
   }
 ]
