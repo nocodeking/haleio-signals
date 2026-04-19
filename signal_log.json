@@ -442,5 +442,17 @@
     "hold": "48h",
     "logged_at": "2026-04-18T19:36:14.126182+00:00",
     "status": "OPEN"
+  },
+  {
+    "pair": "PENDLE",
+    "direction": "LONG",
+    "price": 1.3348,
+    "rsi": 40.0,
+    "atr_pct": 1.85,
+    "sl": 1.272963,
+    "sl_pct": 4.63,
+    "hold": "48h",
+    "logged_at": "2026-04-19T04:52:33.092766+00:00",
+    "status": "OPEN"
   }
 ]
