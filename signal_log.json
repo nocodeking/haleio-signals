@@ -862,5 +862,17 @@
     "hold": "48h",
     "logged_at": "2026-04-29T10:49:00.480416+00:00",
     "status": "OPEN"
+  },
+  {
+    "pair": "STRK",
+    "direction": "LONG",
+    "price": 0.03864,
+    "rsi": 39.7,
+    "atr_pct": 1.17,
+    "sl": 0.037513,
+    "sl_pct": 2.92,
+    "hold": "48h",
+    "logged_at": "2026-04-29T17:20:28.004500+00:00",
+    "status": "OPEN"
   }
 ]
