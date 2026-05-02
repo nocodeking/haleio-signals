@@ -994,5 +994,17 @@
     "hold": "48h",
     "logged_at": "2026-05-01T14:48:06.383053+00:00",
     "status": "OPEN"
+  },
+  {
+    "pair": "TIA",
+    "direction": "SHORT",
+    "price": 0.3565,
+    "rsi": 62.7,
+    "atr_pct": 0.78,
+    "sl": 0.363447,
+    "sl_pct": 1.95,
+    "hold": "48h",
+    "logged_at": "2026-05-02T15:39:30.332803+00:00",
+    "status": "OPEN"
   }
 ]
