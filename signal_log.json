@@ -1234,5 +1234,29 @@
     "hold": "48h",
     "logged_at": "2026-05-14T04:37:40.423875+00:00",
     "status": "OPEN"
+  },
+  {
+    "pair": "TAO",
+    "direction": "SHORT",
+    "price": 306.66,
+    "rsi": 65.1,
+    "atr_pct": 1.16,
+    "sl": 315.530512,
+    "sl_pct": 2.89,
+    "hold": "48h",
+    "logged_at": "2026-05-14T15:13:46.827738+00:00",
+    "status": "OPEN"
+  },
+  {
+    "pair": "ONDO",
+    "direction": "SHORT",
+    "price": 0.41284,
+    "rsi": 70.0,
+    "atr_pct": 2.1,
+    "sl": 0.434527,
+    "sl_pct": 5.25,
+    "hold": "48h",
+    "logged_at": "2026-05-14T15:13:47.395760+00:00",
+    "status": "OPEN"
   }
 ]
