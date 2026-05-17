@@ -1318,5 +1318,17 @@
     "hold": "48h",
     "logged_at": "2026-05-17T06:15:25.601661+00:00",
     "status": "OPEN"
+  },
+  {
+    "pair": "ONDO",
+    "direction": "SHORT",
+    "price": 0.36055,
+    "rsi": 64.5,
+    "atr_pct": 1.12,
+    "sl": 0.370674,
+    "sl_pct": 2.81,
+    "hold": "48h",
+    "logged_at": "2026-05-17T10:24:30.061190+00:00",
+    "status": "OPEN"
   }
 ]
