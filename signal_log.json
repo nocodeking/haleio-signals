@@ -1366,5 +1366,29 @@
     "hold": "48h",
     "logged_at": "2026-05-18T22:52:25.362397+00:00",
     "status": "OPEN"
+  },
+  {
+    "pair": "SUI",
+    "direction": "SHORT",
+    "price": 1.0802,
+    "rsi": 63.0,
+    "atr_pct": 1.34,
+    "sl": 1.116493,
+    "sl_pct": 3.36,
+    "hold": "48h",
+    "logged_at": "2026-05-19T07:38:54.292453+00:00",
+    "status": "OPEN"
+  },
+  {
+    "pair": "STRK",
+    "direction": "SHORT",
+    "price": 0.04169,
+    "rsi": 64.1,
+    "atr_pct": 1.01,
+    "sl": 0.042738,
+    "sl_pct": 2.51,
+    "hold": "48h",
+    "logged_at": "2026-05-19T07:38:55.308662+00:00",
+    "status": "OPEN"
   }
 ]
