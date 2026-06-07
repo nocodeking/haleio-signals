@@ -1930,5 +1930,53 @@
     "hold": "48h",
     "logged_at": "2026-06-07T07:00:57.753641+00:00",
     "status": "OPEN"
+  },
+  {
+    "pair": "FET",
+    "direction": "SHORT",
+    "price": 0.2108,
+    "rsi": 63.7,
+    "atr_pct": 1.95,
+    "sl": 0.22107,
+    "sl_pct": 4.87,
+    "hold": "48h",
+    "logged_at": "2026-06-07T12:17:08.840705+00:00",
+    "status": "OPEN"
+  },
+  {
+    "pair": "TIA",
+    "direction": "SHORT",
+    "price": 0.3179,
+    "rsi": 64.3,
+    "atr_pct": 1.73,
+    "sl": 0.331638,
+    "sl_pct": 4.32,
+    "hold": "48h",
+    "logged_at": "2026-06-07T12:17:09.728675+00:00",
+    "status": "OPEN"
+  },
+  {
+    "pair": "WIF",
+    "direction": "SHORT",
+    "price": 0.1598,
+    "rsi": 61.7,
+    "atr_pct": 1.51,
+    "sl": 0.165828,
+    "sl_pct": 3.77,
+    "hold": "48h",
+    "logged_at": "2026-06-07T12:17:10.064798+00:00",
+    "status": "OPEN"
+  },
+  {
+    "pair": "STRK",
+    "direction": "SHORT",
+    "price": 0.03333,
+    "rsi": 60.6,
+    "atr_pct": 1.58,
+    "sl": 0.034648,
+    "sl_pct": 3.95,
+    "hold": "48h",
+    "logged_at": "2026-06-07T12:17:10.257419+00:00",
+    "status": "OPEN"
   }
 ]
