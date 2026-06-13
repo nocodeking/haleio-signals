@@ -2098,5 +2098,17 @@
     "hold": "48h",
     "logged_at": "2026-06-11T18:08:03.796477+00:00",
     "status": "OPEN"
+  },
+  {
+    "pair": "FET",
+    "direction": "SHORT",
+    "price": 0.1945,
+    "rsi": 62.5,
+    "atr_pct": 1.6,
+    "sl": 0.202272,
+    "sl_pct": 4.0,
+    "hold": "48h",
+    "logged_at": "2026-06-13T11:49:15.335244+00:00",
+    "status": "OPEN"
   }
 ]
