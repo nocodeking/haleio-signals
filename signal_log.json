@@ -2206,5 +2206,29 @@
     "hold": "48h",
     "logged_at": "2026-06-15T22:11:29.672479+00:00",
     "status": "OPEN"
+  },
+  {
+    "pair": "NEAR",
+    "direction": "LONG",
+    "price": 2.3182,
+    "rsi": 38.2,
+    "atr_pct": 2.3,
+    "sl": 2.185031,
+    "sl_pct": 5.74,
+    "hold": "48h",
+    "logged_at": "2026-06-16T17:57:03.668619+00:00",
+    "status": "OPEN"
+  },
+  {
+    "pair": "FET",
+    "direction": "LONG",
+    "price": 0.206,
+    "rsi": 38.0,
+    "atr_pct": 1.79,
+    "sl": 0.196796,
+    "sl_pct": 4.47,
+    "hold": "48h",
+    "logged_at": "2026-06-16T17:57:03.882654+00:00",
+    "status": "OPEN"
   }
 ]
