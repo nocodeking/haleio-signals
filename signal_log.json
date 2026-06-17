@@ -2254,5 +2254,17 @@
     "hold": "48h",
     "logged_at": "2026-06-16T20:47:15.064862+00:00",
     "status": "OPEN"
+  },
+  {
+    "pair": "SUI",
+    "direction": "LONG",
+    "price": 0.774,
+    "rsi": 38.4,
+    "atr_pct": 1.85,
+    "sl": 0.738186,
+    "sl_pct": 4.63,
+    "hold": "48h",
+    "logged_at": "2026-06-17T20:03:22.087779+00:00",
+    "status": "OPEN"
   }
 ]
