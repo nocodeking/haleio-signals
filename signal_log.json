@@ -2266,5 +2266,29 @@
     "hold": "48h",
     "logged_at": "2026-06-17T20:03:22.087779+00:00",
     "status": "OPEN"
+  },
+  {
+    "pair": "PENDLE",
+    "direction": "LONG",
+    "price": 1.3672,
+    "rsi": 34.4,
+    "atr_pct": 2.53,
+    "sl": 1.280657,
+    "sl_pct": 6.33,
+    "hold": "48h",
+    "logged_at": "2026-06-18T16:56:15.890747+00:00",
+    "status": "OPEN"
+  },
+  {
+    "pair": "TIA",
+    "direction": "LONG",
+    "price": 0.3705,
+    "rsi": 34.0,
+    "atr_pct": 2.24,
+    "sl": 0.349766,
+    "sl_pct": 5.6,
+    "hold": "48h",
+    "logged_at": "2026-06-18T16:56:16.103167+00:00",
+    "status": "OPEN"
   }
 ]
