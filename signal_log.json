@@ -2398,5 +2398,41 @@
     "hold": "48h",
     "logged_at": "2026-06-27T22:59:23.296403+00:00",
     "status": "OPEN"
+  },
+  {
+    "pair": "FET",
+    "direction": "LONG",
+    "price": 0.1726,
+    "rsi": 39.1,
+    "atr_pct": 1.33,
+    "sl": 0.166846,
+    "sl_pct": 3.33,
+    "hold": "48h",
+    "logged_at": "2026-06-28T00:05:43.149574+00:00",
+    "status": "OPEN"
+  },
+  {
+    "pair": "ONDO",
+    "direction": "LONG",
+    "price": 0.31166,
+    "rsi": 39.7,
+    "atr_pct": 0.92,
+    "sl": 0.304467,
+    "sl_pct": 2.31,
+    "hold": "48h",
+    "logged_at": "2026-06-28T00:05:43.328569+00:00",
+    "status": "OPEN"
+  },
+  {
+    "pair": "SUI",
+    "direction": "LONG",
+    "price": 0.6846,
+    "rsi": 38.3,
+    "atr_pct": 1.09,
+    "sl": 0.66592,
+    "sl_pct": 2.73,
+    "hold": "48h",
+    "logged_at": "2026-06-28T00:05:43.668085+00:00",
+    "status": "OPEN"
   }
 ]
