@@ -2602,5 +2602,17 @@
     "hold": "48h",
     "logged_at": "2026-07-05T02:24:00.885195+00:00",
     "status": "OPEN"
+  },
+  {
+    "pair": "NEAR",
+    "direction": "LONG",
+    "price": 1.956,
+    "rsi": 37.7,
+    "atr_pct": 1.21,
+    "sl": 1.896987,
+    "sl_pct": 3.02,
+    "hold": "48h",
+    "logged_at": "2026-07-05T06:33:06.407315+00:00",
+    "status": "OPEN"
   }
 ]
