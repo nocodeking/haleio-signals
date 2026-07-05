@@ -2638,5 +2638,41 @@
     "hold": "48h",
     "logged_at": "2026-07-05T21:54:29.137141+00:00",
     "status": "OPEN"
+  },
+  {
+    "pair": "TAO",
+    "direction": "SHORT",
+    "price": 215.9,
+    "rsi": 62.5,
+    "atr_pct": 0.88,
+    "sl": 220.67673,
+    "sl_pct": 2.21,
+    "hold": "48h",
+    "logged_at": "2026-07-05T23:59:38.049330+00:00",
+    "status": "OPEN"
+  },
+  {
+    "pair": "INJ",
+    "direction": "SHORT",
+    "price": 4.796,
+    "rsi": 61.8,
+    "atr_pct": 1.02,
+    "sl": 4.918154,
+    "sl_pct": 2.55,
+    "hold": "48h",
+    "logged_at": "2026-07-05T23:59:39.357958+00:00",
+    "status": "OPEN"
+  },
+  {
+    "pair": "WIF",
+    "direction": "SHORT",
+    "price": 0.1784,
+    "rsi": 62.1,
+    "atr_pct": 1.14,
+    "sl": 0.183464,
+    "sl_pct": 2.84,
+    "hold": "48h",
+    "logged_at": "2026-07-05T23:59:39.539999+00:00",
+    "status": "OPEN"
   }
 ]
