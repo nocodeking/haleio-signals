@@ -2746,5 +2746,17 @@
     "hold": "48h",
     "logged_at": "2026-07-09T23:03:56.797829+00:00",
     "status": "OPEN"
+  },
+  {
+    "pair": "NEAR",
+    "direction": "SHORT",
+    "price": 1.9496,
+    "rsi": 62.3,
+    "atr_pct": 1.17,
+    "sl": 2.006665,
+    "sl_pct": 2.93,
+    "hold": "48h",
+    "logged_at": "2026-07-10T02:10:21.861288+00:00",
+    "status": "OPEN"
   }
 ]
