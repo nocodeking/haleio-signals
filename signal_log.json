@@ -2902,5 +2902,17 @@
     "hold": "48h",
     "logged_at": "2026-07-13T02:01:02.648680+00:00",
     "status": "OPEN"
+  },
+  {
+    "pair": "WIF",
+    "direction": "SHORT",
+    "price": 0.1533,
+    "rsi": 62.0,
+    "atr_pct": 1.18,
+    "sl": 0.157805,
+    "sl_pct": 2.94,
+    "hold": "48h",
+    "logged_at": "2026-07-14T01:47:54.526811+00:00",
+    "status": "OPEN"
   }
 ]
