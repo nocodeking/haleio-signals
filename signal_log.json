@@ -2974,5 +2974,29 @@
     "hold": "48h",
     "logged_at": "2026-07-15T04:43:45.552474+00:00",
     "status": "OPEN"
+  },
+  {
+    "pair": "NEAR",
+    "direction": "LONG",
+    "price": 2.028,
+    "rsi": 39.7,
+    "atr_pct": 0.95,
+    "sl": 1.979739,
+    "sl_pct": 2.38,
+    "hold": "48h",
+    "logged_at": "2026-07-16T09:59:57.103506+00:00",
+    "status": "OPEN"
+  },
+  {
+    "pair": "TIA",
+    "direction": "LONG",
+    "price": 0.4017,
+    "rsi": 37.5,
+    "atr_pct": 1.35,
+    "sl": 0.388112,
+    "sl_pct": 3.38,
+    "hold": "48h",
+    "logged_at": "2026-07-16T09:59:57.905290+00:00",
+    "status": "OPEN"
   }
 ]
