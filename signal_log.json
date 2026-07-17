@@ -3034,5 +3034,17 @@
     "hold": "48h",
     "logged_at": "2026-07-16T23:53:00.014238+00:00",
     "status": "OPEN"
+  },
+  {
+    "pair": "INJ",
+    "direction": "SHORT",
+    "price": 5.055,
+    "rsi": 62.7,
+    "atr_pct": 1.36,
+    "sl": 5.227412,
+    "sl_pct": 3.41,
+    "hold": "48h",
+    "logged_at": "2026-07-17T15:07:12.819657+00:00",
+    "status": "OPEN"
   }
 ]
