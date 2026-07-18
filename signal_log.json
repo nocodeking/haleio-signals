@@ -3058,5 +3058,17 @@
     "hold": "48h",
     "logged_at": "2026-07-18T10:12:15.898545+00:00",
     "status": "OPEN"
+  },
+  {
+    "pair": "TAO",
+    "direction": "SHORT",
+    "price": 195.88,
+    "rsi": 63.6,
+    "atr_pct": 0.63,
+    "sl": 198.976068,
+    "sl_pct": 1.58,
+    "hold": "48h",
+    "logged_at": "2026-07-18T20:56:39.471655+00:00",
+    "status": "OPEN"
   }
 ]
