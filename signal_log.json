@@ -3130,5 +3130,29 @@
     "hold": "48h",
     "logged_at": "2026-07-19T20:03:55.828786+00:00",
     "status": "OPEN"
+  },
+  {
+    "pair": "TAO",
+    "direction": "LONG",
+    "price": 194.42,
+    "rsi": 36.9,
+    "atr_pct": 0.94,
+    "sl": 189.834125,
+    "sl_pct": 2.36,
+    "hold": "48h",
+    "logged_at": "2026-07-20T06:08:24.966295+00:00",
+    "status": "OPEN"
+  },
+  {
+    "pair": "STRK",
+    "direction": "LONG",
+    "price": 0.0282,
+    "rsi": 39.4,
+    "atr_pct": 0.98,
+    "sl": 0.027508,
+    "sl_pct": 2.45,
+    "hold": "48h",
+    "logged_at": "2026-07-20T06:08:26.261632+00:00",
+    "status": "OPEN"
   }
 ]
